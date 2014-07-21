@@ -208,7 +208,7 @@
 
     // then链上的结果已经处理，若重复执行 cont 则直接跳过；
     if (self._result === false) {
-      throw new error("callback called twice");
+      throw new Error("callback called twice");
       return;
     }
     // 第一次进入 continuation，若为 debug 模式则执行，对于同一结果保证 debug 只执行一次；
